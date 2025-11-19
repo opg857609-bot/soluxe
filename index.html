@@ -1,50 +1,127 @@
-<!-- mens.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluxe - Men's Collection</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOLUXE — Home</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">SOLUXE</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="mens.html">Men</a>
-            <a href="womens.html">Women</a>
-            <a href="kids.html">Kids</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">SOLUXE</div>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="Men.html">Men</a>
+                <a href="womens.html">Women</a>
+                <a href="flyyn.html">New</a>
+                <a href="Login.html">Login</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="featured">
-            <h2>Men’s Shoes Collection</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/mens1.jpg" alt="Men's Classic Runner">
-                    <h3>Classic Runner</h3>
-                    <p>₹3499</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/mens2.jpg" alt="Men's Urban Sneaker">
-                    <h3>Urban Sneaker</h3>
-                    <p>₹2999</p>
-                </div>
-                <div class="product-card">
-                    <img src="images/mens3.jpg" alt="Men's Elite Pro">
-                    <h3>Elite Pro</h3>
-                    <p>₹4999</p>
+
+    <!-- Full-bleed hero / trailer section -->
+    <section class="trailer-section">
+        <video autoplay muted loop class="video">
+            <source src="archive/Nike Air Force One - Spec Spot - by Blackfox-Media (4k) - Blackfox Media (1080p, h264).mp4" type="video/mp4" />
+        </video>
+
+        <div class="trailer-inner">
+            <div class="hero-content">
+                <h1>Elevate Your Every Day</h1>
+                <p>Performance-inspired footwear and apparel — built for life in motion.</p>
+                <div class="hero-ctas">
+                    <a href="Men.html" class="btn btn-dark">Shop Men</a>
+                    <a href="womens.html" class="btn btn-outline">Shop Women</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="featured container">
+            <h2>Featured Products</h2>
+                        <div class="shop-controls">
+                            <div class="filters">
+                                <label>
+                                    <select id="category-filter">
+                                        <option value="all">All</option>
+                                        <option value="men">Men</option>
+                                        <option value="women">Women</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <select id="sort-select">
+                                        <option value="default">Sort</option>
+                                        <option value="price-asc">Price: Low to High</option>
+                                        <option value="price-desc">Price: High to Low</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                                            <div id="product-grid" class="product-grid" aria-live="polite">
+                                                <article class="product-card">
+                                                    <img class="product-img" src="archive/shoes_converted.jpg" alt="Classic Runner" />
+                                                    <h3>Classic Runner</h3>
+                                                    <p class="price">₹3499</p>
+                                                    <div class="actions">
+                                                        <a class="btn btn-quick" href="product-1.html">View</a>
+                                                        <a class="btn btn-add" href="cart.html">Add to cart</a>
+                                                    </div>
+                                                </article>
+
+                                                <article class="product-card">
+                                                    <img class="product-img" src="archive/generated-image.png" alt="Urban Sneaker" />
+                                                    <h3>Urban Sneaker</h3>
+                                                    <p class="price">₹2999</p>
+                                                    <div class="actions">
+                                                        <a class="btn btn-quick" href="product-2.html">View</a>
+                                                        <a class="btn btn-add" href="cart.html">Add to cart</a>
+                                                    </div>
+                                                </article>
+
+                                                <article class="product-card">
+                                                    <img class="product-img" src="archive/generated-image (1).png" alt="Elite Pro" />
+                                                    <h3>Elite Pro</h3>
+                                                    <p class="price">₹4999</p>
+                                                    <div class="actions">
+                                                        <a class="btn btn-quick" href="product-3.html">View</a>
+                                                        <a class="btn btn-add" href="cart.html">Add to cart</a>
+                                                    </div>
+                                                </article>
+
+                                                <article class="product-card">
+                                                    <img class="product-img" src="archive/Gemini_Generated_Image_6upoqo6upoqo6upo.png" alt="Soul Chelsea" />
+                                                    <h3>Soul Chelsea</h3>
+                                                    <p class="price">₹2499</p>
+                                                    <div class="actions">
+                                                        <a class="btn btn-quick" href="product-4.html">View</a>
+                                                        <a class="btn btn-add" href="cart.html">Add to cart</a>
+                                                    </div>
+                                                </article>
+
+                                                <article class="product-card">
+                                                    <img class="product-img" src="archive/Gemini_Generated_Image_27g5gx27g5gx27g5.png" alt="Blue Flash" />
+                                                    <h3>Blue Flash</h3>
+                                                    <p class="price">₹5499</p>
+                                                    <div class="actions">
+                                                        <a class="btn btn-quick" href="product-5.html">View</a>
+                                                        <a class="btn btn-add" href="cart.html">Add to cart</a>
+                                                    </div>
+                                                </article>
+                                            </div>
+                        </div>
         </section>
     </main>
-    <footer>
-        &copy; 2025 Soluxe. All rights reserved.
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© 2025 Soluxe. All rights reserved.</div>
+            <div class="credits">CREDITS: NIKE</div>
+        </div>
     </footer>
+    
+            <!-- No JavaScript version: each product links to its product page and cart -->
 </body>
 </html>
