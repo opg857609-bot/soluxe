@@ -1,4 +1,4 @@
-// Minimal product listing, quick-view modal and cart (localStorage)
+
 const PRODUCTS = [
 	{ id: 1, name: 'Classic Runner', price: 3499, img: 'archive/shoes_converted.jpg', category: 'men', desc: 'Comfortable everyday running shoe.' },
 	{ id: 2, name: 'Urban Sneaker', price: 2999, img: 'archive/generated-image.png', category: 'men', desc: 'Sleek urban sneaker for daily wear.' },
@@ -79,7 +79,6 @@ function updateCartBadge(){
 	let badge = document.querySelector('.cart-badge');
 	const total = getCart().reduce((s,i)=>s+i.qty,0);
 	if(!badge){
-		// create small badge in header
 		const header = document.querySelector('.header-inner');
 		const node = document.createElement('div');
 		node.className = 'cart';
@@ -89,8 +88,6 @@ function updateCartBadge(){
 		badge.textContent = total;
 	}
 }
-
-// event delegation
 document.addEventListener('click', (e)=>{
 	const q = e.target.closest('[data-id]');
 	if(q && q.dataset.id){ openQuickView(q.dataset.id); return; }
@@ -101,11 +98,7 @@ document.addEventListener('click', (e)=>{
 
 categoryFilter.addEventListener('change', ()=> renderProducts(getFiltered()));
 sortSelect.addEventListener('change', ()=> renderProducts(getFiltered()));
-
-// close modal when clicking ESC
 document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
-
-// initial render
 renderProducts(getFiltered());
 updateCartBadge();
 

@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SOLUXE — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <header>
-        <div class="logo">SOLUXE</div>
-    <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">SOLUXE</div>
+      <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="Men.html">Men</a>
-        <a href="womens.html">Women</a>
-        <a href="kids.html">Kids</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="contact.html">Contact</a>
         <a href="Login.html">Login</a>
-        <a href="about.html">About</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
-    </header>
-    <h1>Contact Us</h1>
+      </nav>
+    </div>
+  </header>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text" /><br>
-        <label>Email:</label><br>
-        <input type="email" /><br>
-        <label>Message:</label><br>
-        <textarea></textarea><br>
-        <button type="submit">Send</button>
-    </form>
+  <main class="container">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-card">
+      <form>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+        </div>
+
+        <div class="form-row">
+          <input type="text" name="phone" placeholder="Phone (optional)">
+          <input type="text" name="subject" placeholder="Subject">
+        </div>
+
+        <div class="fullrow">
+          <textarea name="message" rows="6" placeholder="Your message"></textarea>
+        </div>
+
+        <div>
+          <a class="btn" href="#">Send Message</a>
+          <a class="btn secondary" href="index.html">Back to Home</a>
+        </div>
+      </form>
+    </div>
+
+    <div style="max-width:700px;margin:0 auto;color:#64748b;font-size:14px">
+      <p><strong>Address:</strong> 123 SOLUXE Avenue, Design City</p>
+      <p><strong>Email:</strong> hello@soluxe.example</p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 SOLUXE</div>
+  </footer>
 </body>
 </html>

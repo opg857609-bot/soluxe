@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Lexend:wght@100..900&family=Nosifer&display=swap');
+
+*{
+    font-family:"Lexend", sans-serif;
+    font-weight:400;
+    font-style:normal;   
+}
+
+
+.logo{
+    font-family: "Nosifer", sans-serif;
+    font-size: 2rem;
+    color: #111111;
+}
+
+.site-header {
+  background: #d9d4d4;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #555;
+}
+.product-image{
+    width: 50px;
+    height: 50px;
+}
